@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRI-LINK Register</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="buyer-page">
+
+    <div class="auth-container">
+        <h1>AGRI-LINK</h1>
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password (at least 8 characters)"
+                minlength="8"
+                required
+            >
+
+            <label for="role">Choose Account Type:</label>
+
+            <select id="role" required>
+                <option value="buyer">Buyer</option>
+                <option value="seller">Seller</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message"></p>
+
+        <p>
+            Already have an account?
+            <a href="/login.html">Login here</a>
+        </p>
+    </div>
+
+    <script src="/auth.js"></script>
+</body>
+</html>
